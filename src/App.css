@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* NAV styles */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  height: 6rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+nav.dark {
+  background-color: #21222a;
+}
+
+.nav--logo_icon {
+  width: 3rem;
+  margin-inline-end: 1rem;
+}
+
+.nav--logo_text {
+  color: #61dafb;
+  margin-inline-end: auto;
+}
+
+.nav--title {
+  color: #deebf8;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 2.5rem;
+  height: 1.3rem;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2b283a;
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  color: #d5d4d8;
+}
+
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/* MAIN styles */
+main {
+  padding: 5.7rem 2.7rem;
+  background-image: url('./assets/react-icon-light.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2b283a;
+}
+
+main.dark {
+  background-image: url('./assets/react-icon-dark.png');
+  background-color: #282d35;
+  color: white;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 3.9rem;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-block-start: 4.6rem;
+  max-inline-size: 40rem;
+}
+
+.main--facts > li {
+  line-height: 1.9rem;
+  padding-block: 1rem;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
